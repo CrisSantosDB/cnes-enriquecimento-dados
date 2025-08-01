@@ -2,15 +2,17 @@
 
 ### Este projeto nasceu da análise dos dados reais do CNES (Cadastro Nacional de Estabelecimentos de Saúde), onde percebi que muitos registros tinham informações de endereço incompletas ou confusas, dificultando a localização exata dos estabelecimentos. Para resolver essa falha, desenvolvi uma solução que cruza os CEPs dos registros com a API ViaCEP, enriquecendo os dados com informações de endereço atualizadas, padronizadas e completas.
 
+---
 ## 💡 Motivação
 ### Sempre trabalho com dados reais e gosto de entender a estrutura antes de aplicar qualquer transformação. Ao analisar os dados do CNES, percebi que muitos registros tinham informações de endereço incompletas ou confusas. Isso me motivou a buscar uma forma de complementar esses dados de forma
 automática, garantindo maior clareza e usabilidade.
+---
 
 ## 🎯 Objetivo:
 
 ### Melhorar a qualidade dos dados do CNES (Cadastro Nacional de Estabelecimentos de Saúde) enriquecendo os registros com informações de endereço obtidas pela API ViaCEP, garantindo maior padronização e completude dos dados.
 
-
+---
 ## 📊 Resultados esperados
 
 ### * Arquivo CNES com campos de endereço completos e padronizados.
@@ -20,7 +22,8 @@ automática, garantindo maior clareza e usabilidade.
 ###* Facilidade na identificação de registros com CEPs inválidos ou desatualizados.
 
 ### * Redução de erros em sistemas que utilizam esses dados para tomada de decisão.
-  
+
+---
 
 
 ## ⚙️ Tecnologias utilizadas
@@ -31,6 +34,7 @@ automática, garantindo maior clareza e usabilidade.
 ### 3. Git para controle de versão do projeto, garantindo organização e histórico das alterações.
 
  
+---
 
 ## 🚀 Etapas do projeto
 ## 1. Coleta dos dados CNES (formato CSV). 

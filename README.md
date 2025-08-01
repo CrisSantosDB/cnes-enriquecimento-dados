@@ -1,4 +1,4 @@
-# Enriquecendo Dados do Ministério da Saúde (CNES) via API
+# Enriquecimento de Dados do CNES (Ministério da Saúde) via API
 
 ### Este projeto nasceu da análise dos dados reais do CNES (Cadastro Nacional de Estabelecimentos de Saúde), onde percebi que muitos registros tinham informações de endereço incompletas ou confusas, dificultando a localização exata dos estabelecimentos. Para resolver essa falha, desenvolvi uma solução que cruza os CEPs dos registros com a API ViaCEP, enriquecendo os dados com informações de endereço atualizadas, padronizadas e completas.
 
@@ -56,14 +56,14 @@
 
 ## 4. Enriquecimento dos dados com endereço completo
 
-### Após consultar a API, os dados de endereço foram unidos aos dados originais. Algumas linhas ficaram duplicadas por causa da repetição de CEPs com dados diferentes.
+### Após o enriquecimento com a API ViaCEP, algumas linhas foram duplicadas devido a múltiplas ocorrências do mesmo CEP com dados diferentes no DataFrame original. Para garantir um conjunto final mais limpo, foi aplicada uma deduplicação com drop_duplicates, mantendo apenas a primeira ocorrência de cada linha idêntica.
 
 ## 5. Padronização dos campos.
 
 ### Essa etapa é opcional, mas padronizei os dados de endereço para ficar com a mesma cara que os dados originais do CNES.
 
 
-## Obs: Todo o código e desenvolvimento está documentado na pasta notebooks.
+## 📁 **Observação:** Todo o código-fonte, bem como o desenvolvimento completo do projeto, está documentado na pasta `notebooks/`. Cada etapa do processo está explicada e comentada.
 
 
 

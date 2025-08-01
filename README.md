@@ -36,6 +36,16 @@
  
 ---
 
+## 📂 Estrutura do Projeto
+
+- `notebooks/` — Contém os notebooks Jupyter usados para desenvolvimento, testes e análise exploratória dos dados. Aqui você encontra o passo a passo detalhado do projeto com comentários explicativos.
+- `src/` — Contém o código principal do projeto em formato `.py`. Esse arquivo é a versão “limpa” do código, pronta para execução e integração.
+- `data/` — Pasta com os dados utilizados no projeto, incluindo os arquivos CSV originais e os arquivos com dados enriquecidos gerados.
+- `pyproject.toml` — Arquivo de configuração do Poetry com as dependências e versões utilizadas.
+- `.gitignore` — Arquivo que define os arquivos e pastas que não devem ser versionados no Git.
+
+---
+
 ## 🚀 Etapas do projeto
 ## 1. Coleta dos dados CNES (formato CSV). 
 

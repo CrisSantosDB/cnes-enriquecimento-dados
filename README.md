@@ -5,29 +5,26 @@
 
 ### 🎯 Objetivo:
 
-Melhorar a qualidade dos dados do CNES disponibilizados pelo Ministério da Saúde, identificando falhas nos registros e utilizando APIs externas para complementar e validar informações como:
+#### Melhorar a qualidade dos dados do CNES disponibilizados pelo Ministério da Saúde, identificando falhas nos registros e utilizando APIs externas para complementar e validar informações como:
 
-Cidade
+##### 1. Cidade
 
-Estado
+##### 2. Estado
 
-Região
+##### 3. Região
 
-Logradouro atualizado
+##### 4. Logradouro atualizado
 
-Complemento
+##### 5. Complemento
 
 ### ⚙️ Tecnologias utilizadas
-Python (pandas, requests)
+##### 1. Python (pandas, requests). Esse projeto estou usando o Poetry, podemos ver todas as bibliotecas e versões que eu usei o projeto no arquivo pyproject.tom
 
-API ViaCEP para validação e enriquecimento de endereços
+##### 2. API ViaCEP para validação e enriquecimento de endereços. Link da API https://viacep.com.br/ 
 
-Jupyter Notebook para testes e visualização intermediária dos dados
+##### 3. Jupyter Notebook para testes e visualização intermediária dos dados
 
-Link da API https://viacep.com.br/ 
-
-
-
+ 
 
 ## 🚀 Etapas do projeto
 ### 1. Coleta dos dados CNES (formato CSV). 
@@ -45,31 +42,29 @@ Link da API https://viacep.com.br/
 
 ### 3. Consulta à API ViaCEP para buscar endereço completo usando CEP
 
-Foi criada uma função chamada cep_api_viacep que percorre todos os CEPs do DataFrame original e faz requisições à API pública do ViaCEP. A cada CEP consultado com sucesso, os dados retornados (como logradouro, bairro, localidade e UF) são adicionados a um novo DataFrame.
+#### Foi criada a função cep_api_viacep que percorre cada CEP do DataFrame e faz requisições à API pública do ViaCEP. Para cada CEP encontrado com sucesso, os dados retornados (logradouro, bairro, localidade, UF) são adicionados em um novo DataFrame. A função também trata possíveis erros de requisição e continua mesmo que algum CEP falhe.
 
-Essa função trata erros de conexão e continua o processo mesmo se algum CEP falhar. No final, ela retorna um DataFrame com os dados atualizados, prontos para serem combinados com os dados originais.
+### 4. Enriquecimento dos dados com endereço completo
 
-4. Enriquecimento dos dados com endereço completo
-
-Após o enriquecimento com a API ViaCEP, algumas linhas foram duplicadas devido a múltiplas ocorrências do mesmo CEP com dados diferentes no DataFrame original. Para garantir um conjunto final mais limpo, foi aplicada uma deduplicação com drop_duplicates, mantendo apenas a primeira ocorrência de cada linha idêntica.
+#### Após consultar a API, os dados de endereço foram unidos aos dados originais. Algumas linhas ficaram duplicadas por causa da repetição de CEPs com dados diferentes.
 
 5. Padronização dos campos.
 
-Aqui é opcional, mas para uma melhor visialização eu deixei tudo padronizado de acordo com o arquivo do CNES
+#### Essa etapa é opcional, mas padronizei os dados de endereço para ficar com a mesma cara que os dados originais do CNES.
 
 
-Obs: Todos os detalhes do codigo do desenvolvimento do projeto está na pasta notebooks.
+## Obs: Todo o código e desenvolvimento está documentado na pasta notebooks.
 
 
 
 
 ### 📊 Resultados esperados
-Arquivo CNES com campos de localização completos
+#### 1 . Arquivo CNES com campos de localização completos
 
-Melhoria na confiabilidade dos dados para uso em análises de saúde pública, alocação de recursos e planejamento logístico
+#### 2. Melhoria na confiabilidade dos dados para uso em análises de saúde pública, alocação de recursos e planejamento logístico
 
-Detecção de registros com CEPs inválidos ou desatualizados
+#### 3. Detecção de registros com CEPs inválidos ou desatualizados
 
 
 ### 💡 Motivação
-Durante a análise dos dados brutos do CNES, identifiquei que muitos registros estavam incompletos, dificultando análises por região, estado ou cidade. Esse projeto foi criado para resolver esses problemas e garantir dados mais precisos para quem precisa trabalhar com informações de estabelecimentos de saúde no Brasil.
+#### Durante a análise dos dados brutos do CNES, identifiquei que muitos registros estavam incompletos, dificultando análises por região, estado ou cidade. Esse projeto foi criado para resolver esses problemas e garantir dados mais precisos para quem precisa trabalhar com informações de estabelecimentos de saúde no Brasil.

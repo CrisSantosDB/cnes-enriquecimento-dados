@@ -1,28 +1,36 @@
-# cnes-enriquecimento-dados
+# Enriquecendo Dados do Ministério da Saúde (CNES) via API
 
-### Projeto voltado para tratamento, enriquecimento e padronização dos dados públicos do Cadastro Nacional de Estabelecimentos de Saúde (CNES), com o objetivo de corrigir informações incompletas, como ausência de cidade, estado e dados desatualizados de logradouro.
+## Este projeto foi criado com o objetivo de aprimorar a qualidade dos dados do CNES (Cadastro Nacional de Estabelecimentos de Saúde), cruzando os CEPs fornecidos nos registros com a API ViaCEP para obter informações de endereço atualizadas, padronizadas e completas.
+## Eu sempre estou usando dados reais, mas antes de começar qualquer coisa, analiso os dados para entender como vou trabalhar. E nessa análise percebi que os dados do CNES não apresentam os endereços de forma clara, dificultando identificar a localização exata dos estabelecimentos. Achei isso uma falha importante e decidi resolver enriquecendo os dados com as informações corretas de endereço.
 
+
+### 💡 Motivação
+#### Sempre trabalho com dados reais e gosto de entender a estrutura antes de aplicar qualquer transformação. Ao analisar os dados do CNES, percebi que muitos registros tinham informações de endereço incompletas ou confusas. Isso me motivou a buscar uma forma de complementar esses dados de forma
+automática, garantindo maior clareza e usabilidade.
 
 ### 🎯 Objetivo:
 
-#### Melhorar a qualidade dos dados do CNES disponibilizados pelo Ministério da Saúde, identificando falhas nos registros e utilizando APIs externas para complementar e validar informações como:
+#### Melhorar a qualidade dos dados do CNES (Cadastro Nacional de Estabelecimentos de Saúde) enriquecendo os registros com informações de endereço obtidas pela API ViaCEP, garantindo maior padronização e completude dos dados.
 
-##### 1. Cidade
 
-##### 2. Estado
+### 📊 Resultados esperados
 
-##### 3. Região
+* Arquivo CNES com campos de endereço completos e padronizados.
 
-##### 4. Logradouro atualizado
+* Dados mais confiáveis para análises em saúde pública, planejamento e logística.
 
+* Facilidade na identificação de registros com CEPs inválidos ou desatualizados.
+
+* Redução de erros em sistemas que utilizam esses dados para tomada de decisão.
+  
 ##### 5. Complemento
 
 ### ⚙️ Tecnologias utilizadas
-##### 1. Python (pandas, requests). Esse projeto estou usando o Poetry, podemos ver todas as bibliotecas e versões que eu usei o projeto no arquivo pyproject.tom
+##### 1. Python (pandas, requests). Uso Poetry para gerenciar dependências, com todas as bibliotecas e versões listadas no arquivo pyproject.toml.
 
 ##### 2. API ViaCEP para validação e enriquecimento de endereços. Link da API https://viacep.com.br/ 
 
-##### 3. Jupyter Notebook para testes e visualização intermediária dos dados
+##### 3. Git para controle de versão do projeto, garantindo organização e histórico das alterações.
 
  
 
@@ -58,13 +66,7 @@
 
 
 
-### 📊 Resultados esperados
-#### 1 . Arquivo CNES com campos de localização completos
 
-#### 2. Melhoria na confiabilidade dos dados para uso em análises de saúde pública, alocação de recursos e planejamento logístico
-
-#### 3. Detecção de registros com CEPs inválidos ou desatualizados
+* Base mais consistente para futuras integrações e análises.
 
 
-### 💡 Motivação
-#### Durante a análise dos dados brutos do CNES, identifiquei que muitos registros estavam incompletos, dificultando análises por região, estado ou cidade. Esse projeto foi criado para resolver esses problemas e garantir dados mais precisos para quem precisa trabalhar com informações de estabelecimentos de saúde no Brasil.

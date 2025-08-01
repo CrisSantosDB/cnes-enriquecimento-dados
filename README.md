@@ -4,8 +4,8 @@
 
 ---
 ## 💡 Motivação
-### Sempre trabalho com dados reais e gosto de entender a estrutura antes de aplicar qualquer transformação. Ao analisar os dados do CNES, percebi que muitos registros tinham informações de endereço incompletas ou confusas. Isso me motivou a buscar uma forma de complementar esses dados de forma
-automática, garantindo maior clareza e usabilidade.
+### Sempre trabalho com dados reais e gosto de entender a estrutura antes de aplicar qualquer transformação. Ao analisar os dados do CNES, percebi que muitos registros tinham informações de endereço incompletas ou confusas. Isso me motivou a buscar uma forma de complementar esses dados de forma automática, garantindo maior clareza e usabilidade.
+
 ---
 
 ## 🎯 Objetivo:
@@ -15,13 +15,13 @@ automática, garantindo maior clareza e usabilidade.
 ---
 ## 📊 Resultados esperados
 
-### * Arquivo CNES com campos de endereço completos e padronizados.
+* ###  Arquivo CNES com campos de endereço completos e padronizados.
 
-### * Dados mais confiáveis para análises em saúde pública, planejamento e logística.
+* ### Dados mais confiáveis para análises em saúde pública, planejamento e logística.
 
-###* Facilidade na identificação de registros com CEPs inválidos ou desatualizados.
+* ### Facilidade na identificação de registros com CEPs inválidos ou desatualizados.
 
-### * Redução de erros em sistemas que utilizam esses dados para tomada de decisão.
+* ### Redução de erros em sistemas que utilizam esses dados para tomada de decisão.
 
 ---
 

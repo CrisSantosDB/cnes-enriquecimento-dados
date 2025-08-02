@@ -1,12 +1,12 @@
 # Enriquecimento de Dados do CNES (Ministério da Saúde) via API
 ![Logo do Ministério da Saúde](MinisteriodaSaude.jpg)
 
-### Este projeto nasceu da análise dos dados reais do CNES (Cadastro Nacional de Estabelecimentos de Saúde), onde percebi que muitos registros tinham informações de endereço incompletas ou confusas, dificultando a localização exata dos estabelecimentos. Para resolver essa falha, desenvolvi uma solução que cruza os CEPs dos registros com a API ViaCEP, enriquecendo os dados com informações de endereço atualizadas, padronizadas e completas.
+### Este projeto nasceu da análise dos dados reais do CNES (Cadastro Nacional de Estabelecimentos de Saúde), onde percebi que muitos registros tinham informações de endereço incompletas ou confusas, dificultando a localização exata dos estabelecimentos. Essa falha na informação me motivou a corrigir isso de forma automatizada, cruzando os CEPs dos registros com a API ViaCEP para enriquecer os dados com informações atualizadas e padronizadas.
 
 ---
 
 ## 💡 Motivação
-### Sempre trabalho com dados reais e gosto de entender a estrutura antes de aplicar qualquer transformação. Ao analisar os dados do CNES, percebi que muitos registros tinham informações de endereço incompletas ou confusas. Isso me motivou a buscar uma forma de complementar esses dados de forma automática, garantindo maior clareza e usabilidade.
+### Na área da saúde, dados completos e corretos fazem diferença na tomada de decisões e no atendimento à população. Ao identificar falhas nos endereços dos estabelecimentos do CNES, percebi a importância de enriquecer esses dados para garantir mais precisão, usabilidade e confiança nas análises.
 
 ---
 
@@ -41,7 +41,7 @@
 
 ## 📂 Estrutura do Projeto
 
-### - notebooks/ — Contém os notebooks Jupyter usados para desenvolvimento, testes e análise exploratória dos dados. Aqui você encontra o passo a passo detalhado do projeto com comentários explicativos.
+### - notebooks/ — Contém os notebooks  usados para desenvolvimento, testes e análise exploratória dos dados. Aqui você encontra o passo a passo detalhado do projeto com comentários explicativos.
 ### - src/cnes/ — Contém o código principal do projeto em formato .py. Esse arquivo é a versão “limpa” do código, pronta para execução e integração.
 ### - data/ — Pasta com os dados utilizados no projeto, incluindo os arquivos CSV originais e os arquivos com dados enriquecidos gerados.
 ### - pyproject.toml — Arquivo de configuração do Poetry com as dependências e versões utilizadas.

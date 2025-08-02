@@ -84,7 +84,8 @@
 ---
 
 
-## 🧪 Como executar o projeto
+## 🧪 Como clonar o projeto
 
+```bash
 git clone https://github.com/CrisSantosDB/cnes-enriquecimento-dados.git
 

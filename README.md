@@ -80,3 +80,11 @@
 ## 🔍 **Observação**  
 
 ### Todo o código-fonte, bem como o desenvolvimento completo do projeto, está documentado na pasta notebooks/. Cada etapa do processo está explicada e comentada.
+
+---
+
+
+## 🧪 Como executar o projeto
+
+git clone https://github.com/CrisSantosDB/cnes-enriquecimento-dados.git
+

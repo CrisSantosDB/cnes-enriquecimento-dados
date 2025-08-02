@@ -1,4 +1,5 @@
 # Enriquecimento de Dados do CNES (Ministério da Saúde) via API
+![Logo do Ministério da Saúde](MinisteriodaSaude.jpg)
 
 ### Este projeto nasceu da análise dos dados reais do CNES (Cadastro Nacional de Estabelecimentos de Saúde), onde percebi que muitos registros tinham informações de endereço incompletas ou confusas, dificultando a localização exata dos estabelecimentos. Para resolver essa falha, desenvolvi uma solução que cruza os CEPs dos registros com a API ViaCEP, enriquecendo os dados com informações de endereço atualizadas, padronizadas e completas.
 

@@ -77,4 +77,6 @@
 
 ---
 
-## 📁 **Observação:** Todo o código-fonte, bem como o desenvolvimento completo do projeto, está documentado na pasta notebooks/. Cada etapa do processo está explicada e comentada.
+## 🔍 **Observação**  
+
+### Todo o código-fonte, bem como o desenvolvimento completo do projeto, está documentado na pasta notebooks/. Cada etapa do processo está explicada e comentada.
